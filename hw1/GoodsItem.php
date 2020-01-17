@@ -5,10 +5,10 @@
 3. Описать поведение класса из п.1 (методы).*/
 
 class GoodsItem{
-    public $id;
-    public $title;
-    public $category;
-    public $price;
+    private $id;
+    private $title;
+    private $category;
+    private $price;
 
     public function buyGood() {
         echo"Товар ".$this->title." из категории ".$this->category." стоимостью ".
@@ -20,6 +20,22 @@ class GoodsItem{
         $this->title = $title;
         $this->category = $category;
         $this->price = $price;						
+    }
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function getTitle() {
+        return $this->title;
+    }
+
+    public function getCategory() {
+        return $this->category;
+    }
+
+    public function getPrice() {
+        return $this->price;
     }
 }
 

@@ -8,8 +8,8 @@ class CartItem extends GoodsItem {
     }
 
     public function deletedGood() {
-        echo"Товар ".$this->title." из категории ".$this->category." стоимостью ".
-        $this->price." удален из корзины!";
+        echo"Товар ".$this->getTitle()." из категории ".$this->getCategory()." стоимостью ".
+        $this->getPrice()." удален из корзины!";
     }  
 }
 
